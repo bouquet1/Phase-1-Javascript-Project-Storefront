@@ -1,0 +1,43 @@
+{
+    "dailyQuickies": [
+   {
+        "id": 1,
+        "title": "Yoga Quickie",
+        "imageUrl": " ",
+        "duration": "5 min",
+        "description": "Yoga is a physical and mental practice that originated in ancient India.",
+        "facts": "Yoga has been shown to reduce stress, improve flexibility, strengthen muscles, and increase overall physical and mental well-being. Regular practice can also help with chronic pain, depression, and anxiety."
+    }, 
+    {
+        "id": 2,
+        "title": "Meditation Quickie",
+        "imageUrl": " ",
+        "duration": "6 min",
+        "description": "Meditation is a practice that involves focusing the mind on a specific object, thought, or activity, with the goal of achieving a mentally clear and emotionally calm state.",
+        "facts": "Meditation has been shown to reduce stress and anxiety, improve focus and concentration, increase emotional well-being, and promote better sleep. Regular practice can also lead to long-term changes in the brain that support greater mental and emotional resilience."
+    },
+    {
+        "id": 3,
+        "title": "Stretch Quickie",
+        "imageUrl": " ",
+        "duration": "8 min",
+        "description": "YBody stretching is a physical activity that involves lengthening and extending the muscles and joints of the body in a controlled manner, with the goal of increasing flexibility and range of motion.",
+        "facts": "Stretching can improve flexibility and range of motion, increase blood flow and oxygen to the muscles, and reduce the risk of injury during physical activity. It can also help reduce muscle soreness and tension, and improve posture and balance."
+    },
+    {
+        "id": 4,
+        "title": " Breathe Quickie",
+        "imageUrl": " ",
+        "duration": "4 min",
+        "description": "Breathing exercises involve focused and intentional breathing techniques, designed to regulate the breath, calm the mind, and reduce stress and tension in the body.",
+        "facts": "Daily breathing exercises can help reduce stress and anxiety, improve mental clarity and focus, increase oxygen flow to the brain and body, and promote relaxation and better sleep. Regular practice can also support the overall health and functioning of the respiratory system."
+    },
+    {
+        "id": 5,
+        "title": "Warm-up Quickie",
+        "duration": "5 min",
+        "description": "Warm-up exercises are gentle physical activities designed to gradually increase heart rate, blood flow, and body temperature, in preparation for more intense physical activity or as a way to start the day with movement.",
+        "facts": "When used as a morning routine, warm-up exercises can increase energy levels, improve circulation, and support mental focus and productivity throughout the day."
+    }
+    ]
+}
