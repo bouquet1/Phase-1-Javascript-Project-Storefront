@@ -1,0 +1,8 @@
+create html, css, js, json at once - DONE
+Write db.json data file -DONE
+Have at least 5 elements - required - DONE
+Have at least 3 attributes for those elements -required- DONE
+test html (I added background color in the css to body) - DONE
+link css, js and test (in js I console.log("try")) - DONE
+json-server --watch db.json, test the locahost link - DONE
+
