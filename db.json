@@ -13,16 +13,16 @@
         "title": "Meditation Quickie",
         "imageUrl": " ",
         "duration": "6 min",
-        "description": "Meditation is a practice that involves focusing the mind on a specific object, thought, or activity, with the goal of achieving a mentally clear and emotionally calm state.",
-        "facts": "Meditation has been shown to reduce stress and anxiety, improve focus and concentration, increase emotional well-being, and promote better sleep. Regular practice can also lead to long-term changes in the brain that support greater mental and emotional resilience."
+        "description": "Meditation is a practice with the goal of achieving a mentally clear and emotionally calm state.",
+        "facts": "Meditation has been shown to reduce stress and anxiety, improve focus and concentration, increase emotional well-being, and promote better sleep."
     },
     {
         "id": 3,
         "title": "Stretch Quickie",
         "imageUrl": " ",
         "duration": "8 min",
-        "description": "YBody stretching is a physical activity that involves lengthening and extending the muscles and joints of the body in a controlled manner, with the goal of increasing flexibility and range of motion.",
-        "facts": "Stretching can improve flexibility and range of motion, increase blood flow and oxygen to the muscles, and reduce the risk of injury during physical activity. It can also help reduce muscle soreness and tension, and improve posture and balance."
+        "description": "Body stretching should be done daily with the goal of increasing flexibility and range of motion.",
+        "facts": "Stretching can improve flexibility and range of motion, improve posture and balance, increase blood flow and oxygen to the muscles, and reduce the risk of injury during physical activities."
     },
     {
         "id": 4,
@@ -30,7 +30,7 @@
         "imageUrl": " ",
         "duration": "4 min",
         "description": "Breathing exercises involve focused and intentional breathing techniques, designed to regulate the breath, calm the mind, and reduce stress and tension in the body.",
-        "facts": "Daily breathing exercises can help reduce stress and anxiety, improve mental clarity and focus, increase oxygen flow to the brain and body, and promote relaxation and better sleep. Regular practice can also support the overall health and functioning of the respiratory system."
+        "facts": "Daily breathing exercises can help reduce stress and anxiety, improve mental clarity and focus, increase oxygen flow to the brain and body, and promote relaxation and better sleep. Regular practice can also support the functioning of the respiratory system."
     },
     {
         "id": 5,
