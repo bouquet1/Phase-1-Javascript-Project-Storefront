@@ -20,4 +20,4 @@ fetch("http://localhost:3000/practices")
         })
     })
 
-
+//document.addEventListener('DOMContentLoaded', init);
