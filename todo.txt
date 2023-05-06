@@ -5,4 +5,8 @@ Have at least 3 attributes for those elements -required- DONE
 test html (I added background color in the css to body) - DONE
 link css, js and test (in js I console.log("try")) - DONE
 json-server --watch db.json, test the locahost link - DONE
+fetch data in js and test with console.log(json()) - DONE
+Display practices from json to the page 
+make the titles of the practices clickable
+
 
