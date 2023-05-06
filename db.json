@@ -3,7 +3,7 @@
    {
         "id": 1,
         "title": "Yoga Quickie",
-        "imageUrl": " ",
+        "imageUrl": "https://unsplash.com/photos/t1NEMSm1rgI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
         "duration": "5 min",
         "description": "Yoga is a physical and mental practice that originated in ancient India.",
         "facts": "Yoga has been shown to reduce stress, improve flexibility, strengthen muscles, and increase overall physical and mental well-being. Regular practice can also help with chronic pain, depression, and anxiety."
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "title": "Meditation Quickie",
-        "imageUrl": " ",
+        "imageUrl": "",
         "duration": "6 min",
         "description": "Meditation is a practice with the goal of achieving a mentally clear and emotionally calm state.",
         "facts": "Meditation has been shown to reduce stress and anxiety, improve focus and concentration, increase emotional well-being, and promote better sleep."
