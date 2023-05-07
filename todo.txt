@@ -8,5 +8,5 @@ json-server --watch db.json, test the locahost link - DONE
 fetch data in js and test with console.log(json()) - DONE
 Display practices from json to the page 
 make the titles of the practices clickable
-
+how to add local images to json data
 
