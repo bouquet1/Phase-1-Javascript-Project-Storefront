@@ -1,4 +1,16 @@
 //console.log("test"); -//works
+
+function createContainerElements(practice){
+    //make a <div class="container"> and a class name "contanier"
+    let contanier = document.createElement("div");
+    contanier.classList.add("contanier");
+    //create an element to hold the title // h2 maybe
+    //create an element to hold img - add photos to db.json image property
+    //create an element to hold duration
+    //create an element to hold description
+    //create an element to hold facts
+}
+
 fetch("http://localhost:3000/practices")
     .then(res => res.json())
     //.then(json => console.log(json)) // works
@@ -7,7 +19,7 @@ fetch("http://localhost:3000/practices")
         const practiceList = document.querySelector("ul#practicesList");
         console.log(practiceList); //works
         //loop through the practices (forEach meets 1 requirement)
-        practices.forEach((practice) => {
+        practices.forEach(practice => createContainerElements(practice)
             //TODO LIST - twe have itle, image, duration, description, facts to loop through
             //create an element to hold the title // h2 maybe
             //create an element to hold img - add photos to db.json image property
@@ -17,7 +29,7 @@ fetch("http://localhost:3000/practices")
             //create <li> item to hold the elements
             //append elements to the list items
             //append list items to ul container
-        })
+        )
     })
 
 //document.addEventListener('DOMContentLoaded', init);
