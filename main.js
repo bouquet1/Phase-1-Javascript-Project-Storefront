@@ -14,10 +14,13 @@ function createContainerElements(practice){
     let h5 = document.createElement("h5");
     h5.textContent = practice.duration;
     //create an element to hold description
-    let p = document.createElement("p");
-    p.textContent = practice.description;
+    let h4 = document.createElement("h4");
+    h4.textContent = practice.description;
     //create an element to hold facts
-    contanier.append(h2, img, h5, p);
+    let p= document.createElement("p");
+    p.textContent = practice.facts;
+    //create an element to hold facts
+    contanier.append(h2, img, h4, h5, p);
     document.getElementById("practicesList").appendChild(contanier);
 }
 
