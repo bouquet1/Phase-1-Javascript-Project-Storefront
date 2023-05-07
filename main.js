@@ -6,7 +6,7 @@ function createContainerElements(practice){
     contanier.classList.add("contanier");
     //create an element to hold the title and pull the title from json data 
     let h2 = document.createElement("h2");
-    h2.textContent = practice.name;
+    h2.textContent = practice.title;
     //create an element to hold img - add photos to db.json image property I don't have url's yet
     let img = document.createElement("img");
     img.src = practice.image;
