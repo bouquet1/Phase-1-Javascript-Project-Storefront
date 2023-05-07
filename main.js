@@ -4,11 +4,21 @@ function createContainerElements(practice){
     //make a <div class="container"> and a class name "contanier"
     let contanier = document.createElement("div");
     contanier.classList.add("contanier");
-    //create an element to hold the title // h2 maybe
+    //create an element to hold the title and pull the title from json data 
+    let h2 = document.createElement("h2");
+    h2.textContent = practice.name;
     //create an element to hold img - add photos to db.json image property
+    let img = document.createElement("img");
+    img.src = practice.image;
     //create an element to hold duration
+    let h5 = document.createElement("h4");
+    h5.textContent = practice.duration;
     //create an element to hold description
+    let p = document.createElement("p");
+    p.textContent = practice.description;
     //create an element to hold facts
+    contanier.append(h2, img, h5, p);
+    document.getElementById("practicesList").appendChild(contanier);
 }
 
 fetch("http://localhost:3000/practices")
