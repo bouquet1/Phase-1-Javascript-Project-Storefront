@@ -7,10 +7,11 @@ function createContainerElements(practice){
     //create an element to hold the title and pull the title from json data 
     let h2 = document.createElement("h2");
     h2.textContent = practice.name;
-    //create an element to hold img 
+    //create an element to hold img - add photos to db.json image property I don't have url's yet
     let img = document.createElement("img");
     img.src = practice.image;
-    //create an element to hold duration    let h5 = document.createElement("h4");
+    //create an element to hold duration    
+    let h5 = document.createElement("h5");
     h5.textContent = practice.duration;
     //create an element to hold description
     let p = document.createElement("p");
@@ -26,7 +27,7 @@ fetch("http://localhost:3000/practices")
     .then(practices => {
         //create a container for the practices ul
         const practiceList = document.querySelector("ul#practicesList");
-        console.log(practiceList); //works
+        //console.log(practiceList); //works
         //loop through the practices (forEach meets 1 requirement)
         practices.forEach(practice => createContainerElements(practice)
             //TODO LIST - twe have itle, image, duration, description, facts to loop through
