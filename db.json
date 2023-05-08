@@ -12,7 +12,7 @@
         "id": 2,
         "title": "Meditation Quickie",
         "imageUrl": "",
-        "duration": "6 min",
+        "duration": "5 min",
         "description": "Meditation is a practice with the goal of achieving a mentally clear and emotionally calm state.",
         "facts": "Meditation has been shown to reduce stress and anxiety, improve focus and concentration, increase emotional well-being, and promote better sleep."
     },
@@ -20,7 +20,7 @@
         "id": 3,
         "title": "Stretch Quickie",
         "imageUrl": " ",
-        "duration": "8 min",
+        "duration": "7 min",
         "description": "Body stretching should be done daily with the goal of increasing flexibility and range of motion.",
         "facts": "Stretching can improve flexibility and range of motion, improve posture and balance, increase blood flow and oxygen to the muscles, and reduce the risk of injury during physical activities."
     },

@@ -48,9 +48,14 @@ fetch("http://localhost:3000/practices")
 
     let introductionText = document.getElementById("introductionText");
     let p = document.createElement("p");
-    p.textContent = "Welcome to MindBody Quickie, the ultimate destination for busy individuals who want to maintain a healthy mind and body. Our app features short, effective daily quickies that you can squeeze into your schedule, as well as longer practices in our Zen Zone for when you have more time to unwind.";
+    p.textContent = "Welcome to MindBody Quickie, the ultimate destination for busy individuals who want to maintain a healthy mind and body connection. Our app features short, effective daily quickies that you can squeeze into your schedule, as well as longer practices in our <span>Zen Zone</span> for when you have more time to unwind.";
     //console.log(p)
     introductionText.append(p);
+    
+    let practiceFrequency = document.getElementById("practiceFrequency");
+    let h6 = document.createElement("p");
+    h6.textContent = "Type how many days per week would you like to practice? (1-7). Leave the rest to us! <span>Open motivational notifications to help me reach my goal</span>";
+    practiceFrequency.append(h6);
     
     
 

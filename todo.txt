@@ -12,14 +12,16 @@ how to add local images to json data
 use facts somewhere else other than dailyQuickies. 
 add button for daily quickies "let's go" or "start now"
 link images to json data and pull into the DOM
-add other parts:
+add other parts without worrying Css. Just display on the page as a start.:
     introduction -DONE
     dailyQuickies - DONE
     Drop-D menu
-    frequency of practice choice
+    frequency of practice choice - DONE
     streak tracker
     step tracker
     maybe likes to dailyQuickies
 fix style of the page apply css
-
+add "whole body stretch" to target area Drop-D
+how to span Zen Zone in html without html
+Second p messed everything up so I cahnged it to h6. In html you can have varipus <p> s inside different <div>. Learn how to write <p>s for different <div> with JS. 
 
