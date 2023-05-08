@@ -18,7 +18,7 @@ function createContainerElements(practice){
     p.textContent = practice.description;
     //adds button
     let button= document.createElement("button");
-    button.textContent = "Let's Star!";
+    button.textContent = "Start";
     //create an element to hold facts
     //create title to quickies "Quickie Zone"
     dailyQuickies.append(h2, img, h5, p, button);
@@ -33,17 +33,7 @@ fetch("http://localhost:3000/practices")
         const practiceList = document.querySelector("ul#practicesList");
         //console.log(practiceList); //works
         //loop through the practices (forEach meets 1 requirement)
-        practices.forEach(practice => createContainerElements(practice)
-            //TODO LIST - twe have itle, image, duration, description, facts to loop through
-            //create an element to hold the title // h2 maybe
-            //create an element to hold img - add photos to db.json image property
-            //create an element to hold duration
-            //create an element to hold description
-            //create an element to hold facts
-            //create <li> item to hold the elements
-            //append elements to the list items
-            //append list items to ul container
-        )
+        practices.forEach(practice => createContainerElements(practice));
     })
 
 
@@ -55,9 +45,9 @@ fetch("http://localhost:3000/practices")
     
     let practiceFrequency = document.getElementById("practiceFrequency");
     // h4 = document.createElement("h4");
-    practiceFrequency.textContent = "Type how many days per week would you like to practice? (1-7). Leave the rest to us! <span>Open motivational notifications to help me reach my goal</span>";
+    practiceFrequency.textContent = "Set your goal and leave the rest to us! <span>Open motivational notifications to help me reach my goal</span>";
     // practiceFrequency.append(h4);
-    
-    
+
+
 
 //document.addEventListener('DOMContentLoaded', init);
