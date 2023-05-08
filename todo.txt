@@ -6,7 +6,20 @@ test html (I added background color in the css to body) - DONE
 link css, js and test (in js I console.log("try")) - DONE
 json-server --watch db.json, test the locahost link - DONE
 fetch data in js and test with console.log(json()) - DONE
-Display practices from json to the page 
+Display practices from json to the page - DONE
 make the titles of the practices clickable
 how to add local images to json data
+use facts somewhere else other than dailyQuickies. 
+add button for daily quickies "let's go" or "start now"
+link images to json data and pull into the DOM
+add other parts:
+    introduction -DONE
+    dailyQuickies - DONE
+    Drop-D menu
+    frequency of practice choice
+    streak tracker
+    step tracker
+    maybe likes to dailyQuickies
+fix style of the page apply css
+
 

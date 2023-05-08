@@ -17,8 +17,8 @@ function createContainerElements(practice){
     let p = document.createElement("h4");
     p.textContent = practice.description;
     //create an element to hold facts
-    // let p= document.createElement("p");
-    // p.textContent = practice.facts;
+    let p= document.createElement("p");
+   p.textContent = practice.facts;
     //create an element to hold facts
     dailyQuickies.append(h2, img, h5, p);
     document.getElementById("practicesList").appendChild(dailyQuickies);
@@ -45,9 +45,13 @@ fetch("http://localhost:3000/practices")
         )
     })
 
+
     let introductionText = document.getElementById("introductionText");
     let p = document.createElement("p");
     p.textContent = "Welcome to MindBody Quickie, the ultimate destination for busy individuals who want to maintain a healthy mind and body. Our app features short, effective daily quickies that you can squeeze into your schedule, as well as longer practices in our Zen Zone for when you have more time to unwind.";
     //console.log(p)
+    introductionText.append(p);
+    
+    
 
 //document.addEventListener('DOMContentLoaded', init);
