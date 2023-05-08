@@ -45,4 +45,8 @@ fetch("http://localhost:3000/practices")
         )
     })
 
+    let introductionText = document.getElementById("introductionText");
+    let p = document.createElement("p");
+    //console.log(p)
+
 //document.addEventListener('DOMContentLoaded', init);
