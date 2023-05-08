@@ -16,11 +16,11 @@ function createContainerElements(practice){
     //create an element to hold description
     let p = document.createElement("h4");
     p.textContent = practice.description;
+    //adds button
+    let button= document.createElement("button");
+    button.textContent = "Let's Star!";
     //create an element to hold facts
-    let p= document.createElement("p");
-   p.textContent = practice.facts;
-    //create an element to hold facts
-    dailyQuickies.append(h2, img, h5, p);
+    dailyQuickies.append(h2, img, h5, p, button);
     document.getElementById("practicesList").appendChild(dailyQuickies);
 }
 
