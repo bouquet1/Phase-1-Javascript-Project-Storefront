@@ -20,6 +20,7 @@ function createContainerElements(practice){
     let button= document.createElement("button");
     button.textContent = "Let's Star!";
     //create an element to hold facts
+    //create title to quickies "Quickie Zone"
     dailyQuickies.append(h2, img, h5, p, button);
     document.getElementById("practicesList").appendChild(dailyQuickies);
 }
@@ -53,9 +54,9 @@ fetch("http://localhost:3000/practices")
     introductionText.append(p);
     
     let practiceFrequency = document.getElementById("practiceFrequency");
-    let h6 = document.createElement("p");
-    h6.textContent = "Type how many days per week would you like to practice? (1-7). Leave the rest to us! <span>Open motivational notifications to help me reach my goal</span>";
-    practiceFrequency.append(h6);
+    // h4 = document.createElement("h4");
+    practiceFrequency.textContent = "Type how many days per week would you like to practice? (1-7). Leave the rest to us! <span>Open motivational notifications to help me reach my goal</span>";
+    // practiceFrequency.append(h4);
     
     
 
