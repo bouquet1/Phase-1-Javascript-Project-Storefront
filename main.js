@@ -1,9 +1,9 @@
 //console.log("test"); -//works
 
 function createContainerElements(practice){
-    //make a <div class="container"> and a class name "contanier"
-    let contanier = document.createElement("div");
-    contanier.classList.add("contanier");
+    //make a <div class="dailyQuickies"> and a class name "daily-quickies-contanier"
+    let dailyQuickies = document.createElement("div");
+    dailyQuickies.classList.add("daily-quickies-contanier");
     //create an element to hold the title and pull the title from json data 
     let h2 = document.createElement("h2");
     h2.textContent = practice.title;
@@ -14,14 +14,14 @@ function createContainerElements(practice){
     let h5 = document.createElement("h5");
     h5.textContent = practice.duration;
     //create an element to hold description
-    let h4 = document.createElement("h4");
-    h4.textContent = practice.description;
+    let p = document.createElement("h4");
+    p.textContent = practice.description;
     //create an element to hold facts
-    let p= document.createElement("p");
-    p.textContent = practice.facts;
+    // let p= document.createElement("p");
+    // p.textContent = practice.facts;
     //create an element to hold facts
-    contanier.append(h2, img, h4, h5, p);
-    document.getElementById("practicesList").appendChild(contanier);
+    dailyQuickies.append(h2, img, h5, p);
+    document.getElementById("practicesList").appendChild(dailyQuickies);
 }
 
 fetch("http://localhost:3000/practices")

@@ -29,15 +29,15 @@
         "title": " Breathe Quickie",
         "imageUrl": " ",
         "duration": "4 min",
-        "description": "Breathing exercises involve focused and intentional breathing techniques, designed to regulate the breath, calm the mind, and reduce stress and tension in the body.",
-        "facts": "Daily breathing exercises can help reduce stress and anxiety, improve mental clarity and focus, increase oxygen flow to the brain and body, and promote relaxation and better sleep. Regular practice can also support the functioning of the respiratory system."
+        "description": "Breathing exercises are designed to regulate the breath, calm the mind, and reduce stress and tension in the body.",
+        "facts": "Daily breathing exercises nvolve focused and intentional breathing techniques which can help reduce stress and anxiety, improve mental clarity and focus, increase oxygen flow to the brain and body, and promote relaxation and better sleep. Regular practice can also support the functioning of the respiratory system."
     },
     {
         "id": 5,
         "title": "Warm-up Quickie",
         "duration": "5 min",
-        "description": "Warm-up exercises are gentle physical activities designed to gradually increase heart rate, blood flow, and body temperature, in preparation for more intense physical activity or as a way to start the day with movement.",
-        "facts": "When used as a morning routine, warm-up exercises can increase energy levels, improve circulation, and support mental focus and productivity throughout the day."
+        "description": "Warm-up exercises are great way to start the day with movement to boost productivity.",
+        "facts": "Warm-up exercises are gentle physical activities designed to gradually increase heart rate, blood flow, and body temperature. When used as a morning routine, warm-up exercises can increase energy levels, improve circulation, and support mental focus and productivity throughout the day." 
     }
     ]
 }
