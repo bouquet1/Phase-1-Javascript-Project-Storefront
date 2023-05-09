@@ -22,3 +22,7 @@ h5 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.daily-quickies-images {
+    max-height: 200px;
+    max-width: auto;
+}

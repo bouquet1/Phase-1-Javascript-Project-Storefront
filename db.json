@@ -3,7 +3,7 @@
    {
         "id": 1,
         "title": "Yoga Quickie",
-        "imageUrl": "require",
+        "image": "images/YOGA-photo-by-dane-wetton-on-Unsplash.jpg",
         "duration": "5 min",
         "description": "Yoga is a physical and mental practice that originated in ancient India.",
         "facts": "Yoga has been shown to reduce stress, improve flexibility, strengthen muscles, and increase overall physical and mental well-being. Regular practice can also help with chronic pain, depression, and anxiety."
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "title": "Meditation Quickie",
-        "imageUrl": "",
+        "image": " ",
         "duration": "5 min",
         "description": "Meditation is a practice with the goal of achieving a mentally clear and emotionally calm state.",
         "facts": "Meditation has been shown to reduce stress and anxiety, improve focus and concentration, increase emotional well-being, and promote better sleep."
@@ -19,7 +19,7 @@
     {
         "id": 3,
         "title": "Stretch Quickie",
-        "imageUrl": " ",
+        "image": " ",
         "duration": "7 min",
         "description": "Body stretching should be done daily with the goal of increasing flexibility and range of motion.",
         "facts": "Stretching can improve flexibility and range of motion, improve posture and balance, increase blood flow and oxygen to the muscles, and reduce the risk of injury during physical activities."
@@ -27,7 +27,7 @@
     {
         "id": 4,
         "title": " Breathe Quickie",
-        "imageUrl": " ",
+        "image": " ",
         "duration": "4 min",
         "description": "Breathing exercises are designed to regulate the breath, calm the mind, and reduce stress and tension in the body.",
         "facts": "Daily breathing exercises nvolve focused and intentional breathing techniques which can help reduce stress and anxiety, improve mental clarity and focus, increase oxygen flow to the brain and body, and promote relaxation and better sleep. Regular practice can also support the functioning of the respiratory system."

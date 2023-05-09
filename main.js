@@ -1,7 +1,7 @@
 //console.log("test"); -//works
 
 function createContainerElements(practice){
-    //make a <div class="dailyQuickies"> and a class name "daily-quickies-contanier"
+    //make a <div class="dailyQuickies"> and give a class name "daily-quickies-contanier"
     let dailyQuickies = document.createElement("div");
     dailyQuickies.classList.add("daily-quickies-contanier");
     //create an element to hold the title and pull the title from json data 
@@ -10,6 +10,7 @@ function createContainerElements(practice){
     //create an element to hold img - add photos to db.json image property I don't have url's yet
     let img = document.createElement("img");
     img.src = practice.image;
+    img.classList.add("daily-quickies-images");
     //create an element to hold duration    
     let h5 = document.createElement("h5");
     h5.textContent = practice.duration;
@@ -48,6 +49,20 @@ fetch("http://localhost:3000/practices")
     practiceFrequency.textContent = "Set your goal and leave the rest to us! <span>Open motivational notifications to help me reach my goal</span>";
     // practiceFrequency.append(h4);
 
-
+/*    <div id="inputGoalDays" class="input-goal-days">
+    <form>
+        <div>
+            <label for="number-of-days">Type how many days per week would you like to practice? (1-7)
+            </label>
+            <input
+                type="text"
+                id="number-of-days"
+                name="number-of-days"
+                placeholder="number of days"
+            />
+        </div>
+    </form>
+    </div>
+*/
 
 //document.addEventListener('DOMContentLoaded', init);
