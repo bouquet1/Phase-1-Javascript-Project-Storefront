@@ -19,12 +19,12 @@ h5 {
 
 .practices-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .daily-quickies-images {
-    max-height: 200px;
-    max-width: 250px;
+    max-height: auto;
+    max-width: 300px;
 }
 
 .hide {
@@ -36,3 +36,10 @@ h5 {
     text-decoration: underline;
 }
 
+h1 {
+    text-align: center;
+}
+
+.quickie-zone-contanier{
+    background-color: blueviolet;
+}

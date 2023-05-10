@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let dailyQuickies = document.createElement("div");
         dailyQuickies.classList.add("daily-quickies-contanier");
         //create an element to hold the title h2, img, duration, description, button and pull the title from json data 
-        let h2 = document.createElement("h2");
-        h2.textContent = practice.title;
+        let h3 = document.createElement("h3");
+        h3.textContent = practice.title;
         let img = document.createElement("img");
         img.src = practice.image;
         img.classList.add("daily-quickies-images");  
@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let button = document.createElement("button");
         button.textContent = "Start";
         button.addEventListener('click', () => p.classList.toggle('hide'))
-        //create title to quickies "Quickie Zone"
-        dailyQuickies.append(h2, img, h5, p, button);
+        dailyQuickies.append(h3, img, h5, p, button);
         document.getElementById("practicesList").appendChild(dailyQuickies);
     }
 
