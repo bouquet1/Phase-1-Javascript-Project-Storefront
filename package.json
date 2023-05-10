@@ -1,0 +1,11 @@
+{
+  "name": "phase-1-javascript-project-mindbodyquickie",
+  "version": "1.0.0",
+  "description": "<!-- markdown file has special things about it # means h2, - creates list items etc you might need to know more so preview can look nicer for a reader. -->",
+  "main": "main.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "author": "",
+  "license": "ISC"
+}

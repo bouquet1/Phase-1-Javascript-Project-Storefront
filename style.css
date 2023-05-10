@@ -26,3 +26,8 @@ h5 {
     max-height: 200px;
     max-width: 250px;
 }
+
+.hide {
+    display: none;
+}
+
