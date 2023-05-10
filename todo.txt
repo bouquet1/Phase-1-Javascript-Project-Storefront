@@ -7,11 +7,10 @@ link css, js and test (in js I console.log("try")) - DONE
 json-server --watch db.json, test the locahost link - DONE
 fetch data in js and test with console.log(json()) - DONE
 Display practices from json to the page - DONE
-make the titles of the practices clickable
-how to add local images to json data
-use facts somewhere else other than dailyQuickies. Maybe alone like facts zone. 
-add button for daily quickies "let's go" or "start now"
-link images to json data and pull into the DOM
+how to add local images to json data - DONE
+use facts somewhere else other than dailyQuickies. 
+add button for daily quickies "let's go" or "start" - DONE
+link images to json data and pull into the DOM - DONE
 add other parts without worrying Css. Just display on the page as a start.:
     introduction -DONE
     dailyQuickies - DONE
@@ -24,5 +23,5 @@ fix style of the page apply css
 add "whole body stretch" to target area Drop-D
 how to span Zen Zone in html without html
 Second p messed everything up so I cahnged it to h6. In html you can have varipus <p> s inside different <div>. Learn how to write <p>s for different <div> with JS. 
-Add Quickie Zone title
+Add Quickie Zone title - DONE
 
