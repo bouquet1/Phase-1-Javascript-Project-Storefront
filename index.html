@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Daily Yoga, Pilates, Meditation, and Breathe Exercises</title>
     <script src="./main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- <head>MindBodyQuickie</head> -->
-    <div id="appHeader">
-        <img src=" " alt=" " />
-    </div>
+    <header id="appHeader">
+        <img src="./images/LOGO.png" alt="Logo" />
+    </header>
     <div id="introductionText" class="introduction-text">
         <p>Welcome to MindBody Quickie, the ultimate destination for busy individuals who want to maintain a healthy
             mind and body connection.
@@ -28,11 +29,13 @@
         <legend>Create My Weekly Plan</legend>
         <p>Set your goal and leave the rest to us!</p>
         <form id="weeklyPlan" class="weekly-plan">
-                <label for="number-of-days">Type how many days would you like to practice? (1-7)</label>
-                <input type="text" id="number-of-days" name="number-of-days" placeholder="   0/7" />
-                <input type="submit"/>
-                <br>
-                <br>
+            <label for="number-of-days">Type how many days would you like to practice? (1-7)</label>
+            <input type="text" id="number-of-days" name="number-of-days" placeholder="   0/7" />
+            <input type="submit" />
+            <br>
+            <br>
+            <p><span class="styled-text"> Turn on motivational notifications </span> to reach your goal.</p>
+            <!-- <br>
                 <label for="day1">Day 1</label>
                 <input type="text" id="day1" name="day1" placeholder="Day 1" />
                 <label for="day1">Day 2</label>
@@ -67,7 +70,7 @@
             <span id="day7"></span><br />
             <br>
             <p><span class="styled-text"> Turn on motivational notifications </span> to reach your goal.</p>
-         </div>
+         </div> -->
     </fieldset>
 
     <dialog id="affirmations">
@@ -75,14 +78,14 @@
         <button id="affirmationButton">X</button>
     </dialog>
     <!-- container for practices -->
-    <div class="quickie-zone-contanier">
+    <div class="quickie-zone-container">
         <h1>Quickie Zone</h1>
         <div id="practicesList" class="practices-list">
         </div>
     </div>
-    <footer id="footer">
-        <p>It's a pleasure to help improvong your life!</p>
-    </footer>
 </body>
+<footer id="footer">
+    <p>It's a pleasure to help improving your life!</p>
+</footer>
 
 </html>

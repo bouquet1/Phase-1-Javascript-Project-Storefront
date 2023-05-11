@@ -1,26 +1,29 @@
 body {
     background-color: #6ae6c3;
+
 }
 
-#appHeader {
+header {
     display: flex;
     justify-content: center;
-    background-color: #beeade;
-    height: 80px;
+    /*background-color: #beeade;*/
+    height: 120px;
     width: 100%;
+    padding: 10px 30px;
+}
+header img {
+    height: 100px;
+    max-width: auto;
+    margin-bottom: 30px;
 }
 
-h2, h4, h5 {
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-h5 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#introductionText {
+    font-family: Roboto;
 }
 
 .practices-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .daily-quickies-images {
@@ -53,5 +56,13 @@ h1 {
     width: 100%;
     text-align: center;
     padding-top: 5px;
-    margin: 20px;
+}
+
+.quickie-zone-container {
+    margin: 30px 10px 60px 10px;
+    font-family: Roboto;
+}
+
+#weeklyPlan {
+    font-family: Italiano;
 }

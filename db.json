@@ -3,6 +3,7 @@
    {
         "id": 1,
         "title": "Yoga Quickie",
+        "name": "Yoga",
         "image": "images/YOGA-photo-by-dylan-gillis-unsplash.jpg",
         "duration": "5 min",
         "description": "Yoga is a physical and mental practice that originated in ancient India.",
@@ -11,6 +12,7 @@
     {
         "id": 2,
         "title": "Meditation Quickie",
+        "name": "Meditation",
         "image": "images/meditation-photo-by-shashi-chaturvedula-unsplash.jpg",
         "duration": "5 min",
         "description": "Meditation is a practice with the goal of achieving a mentally clear and emotionally calm state.",
@@ -19,6 +21,7 @@
     {
         "id": 3,
         "title": "Stretch Quickie",
+        "name": "Stretch",
         "image": "images/STRETCH-photo-by-anastasia-hisel-unsplash.jpg",
         "duration": "7 min",
         "description": "Body stretching should be done daily with the goal of increasing flexibility and range of motion.",
@@ -27,6 +30,7 @@
     {
         "id": 4,
         "title": " Breathe Quickie",
+        "name": "Breathe",
         "image": "images/BREATHE-photo-by-valeriia-bugaiova-unsplash.jpg",
         "duration": "4 min",
         "description": "Breathing exercises are designed to regulate the breath, calm the mind, and reduce stress and tension in the body.",
@@ -36,9 +40,19 @@
         "id": 5,
         "image": "images/WarmUp-photo-by-bruce-mars-unsplash.jpg",
         "title": "Warm-up Quickie",
+        "name": "Warm-up",
         "duration": "5 min",
-        "description": "Warm-up exercises are great way to start the day with movement to boost productivity.",
-        "facts": "Warm-up exercises are gentle physical activities designed to gradually increase heart rate, blood flow, and body temperature. When used as a morning routine, warm-up exercises can increase energy levels, improve circulation, and support mental focus and productivity throughout the day." 
+        "description": "Warm-up exercises are gentle physical activities designed to gradually increase heart rate, blood flow, and body temperature.",
+        "facts": "When used as a morning routine, warm-up exercises can increase energy levels, improve circulation, and support mental focus and productivity throughout the day. Warm-up exercises are great way to start the day to boost productivity as well as preparing your muscles before high intensity physical work." 
+    },
+    {
+        "id": 6,
+        "image": "images/PILATES-photo-by-alex-shaw-unsplash.jpg",
+        "title": "Pilates Quickie",
+        "name": "Pilates",
+        "duration": "10 min",
+        "description": "Pilates is a form of exercise which concentrates on strengthening the body with an emphasis on core strength.",
+        "facts": "Pilates is a form of exercise that focuses on strengthening the core muscles of your body, including the abdominal muscles, lower back, hips, and buttocks. By practicing Pilates, you can expect to improve your overall muscle tone, enhance muscular control, and stabilize your spine." 
     }
     ]
 }

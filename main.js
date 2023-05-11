@@ -1,9 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     function createContainerElements(practice) {
-        //create a contanier div for practices, create title, h2, img, duration, description, button for practices, and append them to DOM.
+        //create a container div for practices, create title, h2, img, duration, description, button for practices, and append them to DOM.
         let dailyQuickies = document.createElement("div");
-        dailyQuickies.classList.add("daily-quickies-contanier");
+        dailyQuickies.classList.add("daily-quickies-container");
         let h3 = document.createElement("h3");
         h3.textContent = practice.title;
         let img = document.createElement("img");
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p.classList.add('hide');
         p.textContent = practice.description;
         let button = document.createElement("button");
-        button.textContent = "More Info";
+        button.textContent = `What is ${practice.name}`;
         //click event listener practices' buttons
         button.addEventListener('click', () => p.classList.toggle('hide'))
         dailyQuickies.append(h3, img, h5, p, button);
