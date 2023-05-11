@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p.classList.add('hide');
         p.textContent = practice.description;
         let button = document.createElement("button");
-        button.textContent = "Start";
+        button.textContent = "More Info";
         //click event listener practices' buttons
         button.addEventListener('click', () => p.classList.toggle('hide'))
         dailyQuickies.append(h3, img, h5, p, button);
@@ -40,6 +40,6 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
 // 
 
 //manipulates affirmations box
-const affirmations =document.getElementById("affirmations");
-setTimeout(() => affirmations.show(), 3000);
-document.getElementById("affirmationButton").addEventListener('click', (e) => affirmations.close())
+// const affirmations =document.getElementById("affirmations");
+// setTimeout(() => affirmations.show(), 3000);
+// document.getElementById("affirmationButton").addEventListener('click', (e) => affirmations.close())

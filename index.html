@@ -12,7 +12,7 @@
 
 <body>
 
-    <head>MindBodyQuickie</head>
+    <!-- <head>MindBodyQuickie</head> -->
     <div id="appHeader">
         <img src=" " alt=" " />
     </div>
@@ -26,18 +26,50 @@
     </div>
     <fieldset>
         <legend>Create My Weekly Plan</legend>
+        <p>Set your goal and leave the rest to us!</p>
         <form id="weeklyPlan" class="weekly-plan">
                 <label for="number-of-days">Type how many days would you like to practice? (1-7)</label>
                 <input type="text" id="number-of-days" name="number-of-days" placeholder="   0/7" />
                 <input type="submit"/>
                 <br>
-                <p>Set your goal and leave the rest to us!
-                    <br>
-                    Click here to <span class="styled-text"> turn on motivational notifications </span> to reach your
-                    goal.
-                </p>
+                <br>
+                <label for="day1">Day 1</label>
+                <input type="text" id="day1" name="day1" placeholder="Day 1" />
+                <label for="day1">Day 2</label>
+                <input type="text" id="day2" name="day2" placeholder="Day 2" />
+                <label for="day1">Day 3</label>
+                <input type="text" id="day3" name="day3" placeholder="Day 3" />
+                <label for="day1">Day 4</label>
+                <input type="text" id="day4" name="day4" placeholder="Day 4" />
+                <label for="day1">Day 5</label>
+                <input type="text" id="day5" name="day5" placeholder="Day 5" />
+                <label for="day1">Day 6</label>
+                <input type="text" id="day6" name="day6" placeholder="Day 6" />
+                <label for="day1">Day 7</label>
+                <input type="text" id="day7" name="day7" placeholder="Day 7" />
+                <br>
         </form>
+        <br>
+        <div id="user-input">
+            <label for="day1">Day1:</label>
+            <span id="day1"></span><br />
+            <label for="day2">Day2:</label>
+            <span id="day2"></span><br />
+            <label for="day3">Day3:</label>
+            <span id="day3"></span><br />
+            <label for="day4">Day4:</label>
+            <span id="day4"></span><br />
+            <label for="day5">Day5:</label>
+            <span id="day5"></span><br />
+            <label for="day6">Day6:</label>
+            <span id="day6"></span><br />
+            <label for="day7">Day7:</label>
+            <span id="day7"></span><br />
+            <br>
+            <p><span class="styled-text"> Turn on motivational notifications </span> to reach your goal.</p>
+         </div>
     </fieldset>
+
     <dialog id="affirmations">
         <p>Even a little effort counts</p>
         <button id="affirmationButton">X</button>
@@ -48,6 +80,9 @@
         <div id="practicesList" class="practices-list">
         </div>
     </div>
+    <footer id="footer">
+        <p>It's a pleasure to help improvong your life!</p>
+    </footer>
 </body>
 
 </html>

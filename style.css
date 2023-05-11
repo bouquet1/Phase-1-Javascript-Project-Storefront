@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #beeade;
-    height: 90px;
+    height: 80px;
     width: 100%;
 }
 
@@ -47,3 +47,11 @@ h1 {
     max-height: auto;
 }
 
+#footer {
+    background-color: #beeade;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    margin: 20px;
+}
