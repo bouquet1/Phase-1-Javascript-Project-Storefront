@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         h3.textContent = practice.title;
         let img = document.createElement("img");
         img.src = practice.image;
-        img.classList.add("daily-quickies-images");  
+        img.classList.add("daily-quickies-images");
         let h5 = document.createElement("h5");
         h5.textContent = practice.duration;
         let p = document.createElement("p");
@@ -22,13 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("practicesList").appendChild(dailyQuickies);
     }
 
-    //submit event listener weekly goal input
-    const numberOfDays = document.getElementById("weeklyPlanInput");
-    numberOfDays.addEventListener("submit", (e) => {
-        e.preventDefault();
-        
-    })
-
     fetch("http://localhost:3000/practices")
         .then(res => res.json())
         .then(practices => {
@@ -37,4 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+//submit event listener weekly goal input
+
+document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const numberOfDays = document.getElementById("number-of-days").value;
+    console.log(numberOfDays);
+})
 

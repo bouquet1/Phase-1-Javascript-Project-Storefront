@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(153, 225, 181, 0.775);
+    background-color: rgba(156, 246, 191, 0.775);
 }
 
 #appHeader {
@@ -20,7 +20,7 @@ h5 {
 
 .practices-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .daily-quickies-images {

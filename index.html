@@ -13,33 +13,42 @@
 <body>
 
     <head>MindBodyQuickie</head>
-    <!-- container for practices -->
     <div id="appHeader">
         <img src=" " alt=" " />
     </div>
     <div id="introductionText" class="introduction-text">
         <p>Welcome to MindBody Quickie, the ultimate destination for busy individuals who want to maintain a healthy
-            mind and body connection. Our app features short, effective daily quickies that you can squeeze into your
-            schedule, as well as longer practices in our <span class="styled-text">Zen Zone</span> for when you have
-            more time to unwind.</p>
-    </div>
-    <div id="weeklyPlan" class="weekly-plan">
-        <h3>Create My Weekly Plan</h3>
-        <form id="weeklyPlanInput" class="weekly-plan-input">
-            <label for="number-of-days">Type how many days per week would you like to practice? (1-7)</label>
-            <input type="text" id="number-of-days" name="number-of-days" placeholder="   0/7" />
-            <input type="submit" name="submit" placeholder="submit" />
-        </form>
-        <p>Set your goal and leave the rest to us!
+            mind and body connection.
             <br>
-            Click here to <span class="styled-text"> turn on motivational notifications </span> to reach your goal.
+            Our app features short, effective daily quickies that you can squeeze into your schedule, as well as longer
+            practices in our <span class="styled-text">Zen Zone</span> for when you have more time to unwind.
         </p>
     </div>
-    <div clas="quickie-zone-contanier">
+    <fieldset>
+        <legend>Create My Weekly Plan</legend>
+        <form id="weeklyPlan" class="weekly-plan">
+            <!-- <div id="weeklyPlan" class="weekly-plan"> -->
+                <label for="number-of-days">Type how many days would you like to practice? (1-7)</label>
+                <input type="text" id="number-of-days" name="number-of-days" placeholder="   0/7" />
+                <p>Set your goal and leave the rest to us!
+                    <br>
+                    Click here to <span class="styled-text"> turn on motivational notifications </span> to reach your
+                    goal.
+                </p>
+                <input type="submit"/>
+            <!-- </div> -->
+        </form>
+    </fieldset>
+    <!-- container for practices -->
+    <div class="quickie-zone-contanier">
         <h1>Quickie Zone</h1>
         <div id="practicesList" class="practices-list">
         </div>
     </div>
+    <dialog id="affirmations">
+        <p>Even a little effort counts</p>
+        <button id="affirmationButton">X</button>
+    </dialog>
 </body>
 
 </html>
