@@ -1,12 +1,12 @@
 body {
-    background-color: rgba(156, 246, 191, 0.775);
+    background-color: #6ae6c3;
 }
 
 #appHeader {
     display: flex;
     justify-content: center;
-    background-color: rgba(94, 211, 139, 0.775);
-    height: 100px;
+    background-color: #beeade;
+    height: 90px;
     width: 100%;
 }
 
@@ -42,5 +42,11 @@ h1 {
 }
 
 .quickie-zone-contanier{
-    background-color: blueviolet;
+    /* background-color: #6ae6c3; */
 }
+
+#affirmations {
+    max-width: 500px;
+    max-height: auto;
+}
+
