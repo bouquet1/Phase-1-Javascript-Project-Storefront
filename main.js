@@ -38,3 +38,6 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     console.log(numberOfDays);
 })
 
+const affirmations =document.getElementById("affirmations");
+setTimeout(() => affirmations.show(), 3000);
+document.getElementById("affirmationButton").addEventListener('click', (e) => affirmations.close())

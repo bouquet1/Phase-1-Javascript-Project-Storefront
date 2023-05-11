@@ -31,11 +31,11 @@ Project Requirements
 
     done - Your entire app must run on a single page. There should be NO redirects or reloads. In other words, your project will contain a single HTML file
 
-    - Use at least 2 distinct event listenersLinks to an external site. (2 events of different types) that enable interactivity. What this means is that, if you had 2 click events, that would only count as 1 distinct event and you would need to add at least 1 more. Think search or filter functionality, toggling dark/light mode, upvoting posts, etc. Each of your event listeners should also have its own unique callback function. These must be added using JavaScript's .addEventListener() method. Events embedded into HTML elements and CSS will not count toward the total. Please ask your instructor if you have questions regarding this requirement.
+    done - Use at least 2 distinct event listenersLinks to an external site. (2 events of different types) that enable interactivity. What this means is that, if you had 2 click events, that would only count as 1 distinct event and you would need to add at least 1 more. Think search or filter functionality, toggling dark/light mode, upvoting posts, etc. Each of your event listeners should also have its own unique callback function. These must be added using JavaScript's .addEventListener() method. Events embedded into HTML elements and CSS will not count toward the total. Please ask your instructor if you have questions regarding this requirement.
 
-    - Your project must implement at least one instance of array iteration using available array methods (map, forEach, filter, etc). Manipulating your API data in some way should present an opportunity to implement your array iteration.
+    done - Your project must implement at least one instance of array iteration using available array methods (map, forEach, filter, etc). Manipulating your API data in some way should present an opportunity to implement your array iteration.
 
-    - Follow good coding practices. Keep your code DRY (Do not repeat yourself) by utilizing functions to abstract repetitive code.
+    double check in a lab- Follow good coding practices. Keep your code DRY (Do not repeat yourself) by utilizing functions to abstract repetitive code.
 
     - We also expect you to complete the following items prior to turning in your project:
         - [GITHUB REPOSITORY]: A well-written informative README.md file. This is the business card of your project and you really want it to look great! A template can be found here: makeareadme.comLinks to an external site.. Some additional considerations:
