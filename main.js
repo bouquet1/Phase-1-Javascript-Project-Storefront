@@ -1,10 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     function createContainerElements(practice) {
-        //make a <div class="dailyQuickies"> and give a class name "daily-quickies-contanier"
+        //create a contanier div for practices, create title, h2, img, duration, description, button for practices, and append them to DOM.
         let dailyQuickies = document.createElement("div");
         dailyQuickies.classList.add("daily-quickies-contanier");
-        //create an element to hold the title h2, img, duration, description, button and pull the title from json data 
         let h3 = document.createElement("h3");
         h3.textContent = practice.title;
         let img = document.createElement("img");
@@ -17,10 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
         p.textContent = practice.description;
         let button = document.createElement("button");
         button.textContent = "Start";
+        //click event listener practices' buttons
         button.addEventListener('click', () => p.classList.toggle('hide'))
         dailyQuickies.append(h3, img, h5, p, button);
         document.getElementById("practicesList").appendChild(dailyQuickies);
     }
+
+    //submit event listener weekly goal input
+    const numberOfDays = document.getElementById("weeklyPlanInput");
+    numberOfDays.addEventListener("submit", (e) => {
+        e.preventDefault();
+        
+    })
 
     fetch("http://localhost:3000/practices")
         .then(res => res.json())
