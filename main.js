@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         p.textContent = practice.description;
         let button = document.createElement("button");
         button.textContent = `What is ${practice.name}`;
-        //click event listener practices' buttons
-        button.addEventListener('click', () => p.classList.toggle('hide'))
-        dailyQuickies.append(h3, img, h5, p, button);
+        button.addEventListener('click', () => p.classList.toggle('hide'));
+        // button2.addEventListener('click', () => p.classList.toggle('hide'));
+        dailyQuickies.append(h3, img, h5, p, button,);
         document.getElementById("practicesList").appendChild(dailyQuickies);
     }
 
@@ -29,13 +29,77 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
 })
-
+const displayDays = document.querySelector("#displayDays");
 //submit event listener weekly goal input
 document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     e.preventDefault();
+    let submitButton = document.createElement("input")
+    submitButton.type = "submit"
     const numberOfDays = document.getElementById("number-of-days").value;
-    console.log(numberOfDays);
+    for(let i=0; i < numberOfDays; i++){
+        //make d-down equal to number of days
+        const selectActivity = document.createElement("select");
+        const yoga = document.createElement("option")
+        yoga.textContent = "Yoga"
+        const meditation = document.createElement("option")
+        meditation.textContent = "Meditation"
+        const stretch = document.createElement("option")
+        stretch.textContent = "Stretch"
+        const breathe = document.createElement("option")
+        breathe.textContent = "Breathe"
+        const warmUp = document.createElement("option")
+        warmUp.textContent = "Warm Up"
+        const pilates = document.createElement("option")
+        pilates.textContent = "Pilates"
+
+        selectActivity.append(yoga, meditation, stretch, breathe, warmUp, pilates);
+        displayDays.append(selectActivity)
+    }
+    displayDays.append(submitButton)
+    displayDays.addEventListener('submit', handleDisplayDay)
 })
+
+function handleDisplayDay(e){
+    e.preventDefault()
+    const practiceContainer = document.querySelector('#practiceContainer')
+    console.log(practiceContainer)
+    if(displayDays[0]){ 
+        if(e.target[0] === displayDays[displayDays.length-1])return;
+        const dayOneCard = document.createElement("div")
+        const dayOnePractice = document.createElement('p')
+        const dayOne = document.createElement('h1')
+        dayOne.textContent = 'Day 1:'
+        dayOnePractice.textContent = e.target[0].value
+        dayOneCard.append(dayOne, dayOnePractice)
+        practiceContainer.append(dayOneCard)
+    }
+    if(displayDays[1]){
+        if(e.target[1] === displayDays[displayDays.length-1])return;
+        console.log(e.target[1].value)
+    }
+    if(displayDays[2]){
+        if(e.target[2] === displayDays[displayDays.length-1])return;
+        console.log(e.target[2].value)
+    }
+    if(displayDays[3]){
+        if(e.target[3] === displayDays[displayDays.length-1])return;
+        console.log(e.target[3].value)
+    }
+    if(displayDays[4]){
+        if(e.target[4] === displayDays[displayDays.length-1])return;
+        console.log(e.target[4].value)
+    }
+    if(displayDays[5]){
+        if(e.target[5] === displayDays[displayDays.length-1])return;
+        console.log(e.target[5].value)
+    }
+    if(displayDays[6]){
+        if(e.target[6] === displayDays[displayDays.length-1])return;
+        console.log(e.target[6].value)
+    }
+}
+
+
 
 // 
 

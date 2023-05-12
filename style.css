@@ -9,10 +9,9 @@ header {
     /*background-color: #beeade;*/
     height: 120px;
     width: 100%;
-    padding: 10px 30px;
 }
 header img {
-    height: 100px;
+    height: 120px;
     max-width: auto;
     margin-bottom: 30px;
 }
@@ -24,11 +23,21 @@ header img {
 .practices-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.daily-quickies-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .daily-quickies-images {
-    max-height: auto;
-    max-width: 300px;
+    width: 100%;
+    max-height: auto; 
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(177, 15, 152);
 }
 
 .hide {
@@ -40,8 +49,12 @@ header img {
     text-decoration: underline;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
+}
+
+h5 {
+    text-align: right;
 }
 
 
@@ -65,4 +78,9 @@ h1 {
 
 #weeklyPlan {
     font-family: Italiano;
+}
+
+button {
+    border-radius: 10px;
+    width: 50%;
 }
