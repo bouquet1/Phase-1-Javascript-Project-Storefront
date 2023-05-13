@@ -156,6 +156,8 @@ function handleDisplayDay(e){
     }
  }
 
+ const displayDuration = document.querySelector("#displayDuration");
+ //submit event listener duration input
 
 //QUESTION When I apply css on it, I can't close the modal box. I couldn't put it in the middle of the screen as a second layer. 
 
