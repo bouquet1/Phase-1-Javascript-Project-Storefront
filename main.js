@@ -37,6 +37,9 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     let submitButton = document.createElement("input")
     submitButton.type = "submit"
     const numberOfDays = document.getElementById("number-of-days").value;
+    //deneme kodu basi
+    
+    //deneme kodu sonu
     for(let i=0; i < numberOfDays; i++){
         //make d-down boxes === number of days
         const selectActivity = document.createElement("select");
@@ -63,6 +66,13 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
 })
 
 //QUESTION submit button continues to submit even after # of days is chosen. It shouldn't submit more than 7 days.
+
+// breakroom help, continue on this code 
+//     if(displayDays[0]){
+//         if(e.target[0] === displayDays[displayDays.length-1])return;
+//         console.log(e.target[0].value)
+//     }
+
 function handleDisplayDay(e){
     e.preventDefault()
     const practiceContainer = document.querySelector('#practiceContainer')
@@ -119,47 +129,7 @@ function handleDisplayDay(e){
         daySevenCard.textContent = `${daySeven.textContent = "Day 4"}: ${e.target[6].value}`
         practiceContainer.append(daySevenCard)
     }
-
-
-
-// breakroom help, continue on this code 
-//     if(displayDays[0]){
-//         if(e.target[0] === displayDays[displayDays.length-1])return;
-//         console.log(e.target[0].value)
-//     }
-
  }
-
-//QUESTION when I choose more than 1 day it gets weird because value of numberOfDays changes from 1 to f.e.2 or 3 and Day 1 becomes 2 or 3/
-
-// function handleDisplayDay(e) {
-//     e.preventDefault();
-//     const practiceContainer = document.querySelector('#practiceContainer');
-//     const numberOfDays = document.getElementById("number-of-days").value;
-//     const selectActivity = document.createElement("select");
-//     if(displayDays[0]) { 
-//         if(e.target[0] === displayDays[displayDays.length-1])return;
-//         const workPlan = {
-//             dayChoice: numberOfDays,
-//             practiceChoice: e.target[0].value, 
-//         }
-//         const dayOneCard = document.createElement("div");
-//         dayOneCard.textContent = `Day ${workPlan.dayChoice}: ${workPlan.practiceChoice}`
-//         practiceContainer.append(dayOneCard)
-//     }
-//     if(displayDays[1]){
-//         if(e.target[1] === displayDays[displayDays.length-1])return;
-//         const workPlan = {
-//             dayChoice: numberOfDays,
-//             practiceChoice: e.target[1].value, 
-//         }
-//         const dayTwoCard = document.createElement("div");
-//         dayTwoCard.textContent = `Day ${workPlan.dayChoice}: ${workPlan.practiceChoice}`
-//         practiceContainer.append(dayTwoCard)
-//     }
-// }
-
-
 
 
 
