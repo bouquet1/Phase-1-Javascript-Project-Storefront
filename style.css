@@ -82,5 +82,21 @@ h5 {
 
 button {
     border-radius: 10px;
-    width: 50%;
+    width: auto;
 }
+
+/* #quotes {
+    background-color: rgb(38, 225, 219);
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+#quotesButton button {
+    width: 50px;
+}  */
+
+
