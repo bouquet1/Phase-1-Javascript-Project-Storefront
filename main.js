@@ -37,7 +37,7 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     submitButton.type = "submit"
     const numberOfDays = document.getElementById("number-of-days").value;
     for(let i=0; i < numberOfDays; i++){
-        //make d-down equal to number of days
+        //make d-down boxes === number of days
         const selectActivity = document.createElement("select");
         const yoga = document.createElement("option")
         yoga.textContent = "Yoga"
