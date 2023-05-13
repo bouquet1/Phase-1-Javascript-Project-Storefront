@@ -89,12 +89,21 @@ function handleDisplayDay(e){
         dayTwoCard.textContent = `${dayNumber}: ${chosenPractice}`;
         practiceContainer.append(dayTwoCard)
     }
+    if(displayDays[2]){
+        if(e.target[2] === displayDays[displayDays.length-1])return;
+        const dayThreeCard = document.createElement("div")
+        //const dayThreePractice = document.createElement("p")
+        //dayThreePractice.textContent = e.target[2].value
+        //const chosenPractice = dayThreePractice.textContent
+        const dayThree = document.createElement("p")
+        //dayThree.textContent = "Day 3"
+        //const dayNumber = dayThree.textContent
+        dayThreeCard.textContent = `${dayThree.textContent = "Day 3"}: ${e.target[2].value}`
+        practiceContainer.append(dayThreeCard)
+    }
 
 
-//     if(displayDays[2]){
-//         if(e.target[2] === displayDays[displayDays.length-1])return;
-//         console.log(e.target[2].value)
-//     }
+
 //     if(displayDays[3]){
 //         if(e.target[3] === displayDays[displayDays.length-1])return;
 //         console.log(e.target[3].value)
