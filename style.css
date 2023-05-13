@@ -10,6 +10,12 @@ header {
     height: 120px;
     width: 100%;
 }
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 header img {
     height: 120px;
     max-width: auto;
@@ -17,7 +23,8 @@ header img {
 }
 
 #introductionText {
-    font-family: Roboto;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
 }
 
 .practices-list {
@@ -34,7 +41,7 @@ header img {
 
 .daily-quickies-images {
     width: 100%;
-    max-height: auto; 
+    max-height: auto;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px rgb(177, 15, 152);
@@ -45,22 +52,17 @@ header img {
 }
 
 .styled-text {
-    font-weight: 800;
+    font-weight: 600;
     text-decoration: underline;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
 }
 
 h5 {
     text-align: right;
-}
-
-
-#affirmations {
-    max-width: 500px;
-    max-height: auto;
 }
 
 #footer {
@@ -73,11 +75,11 @@ h5 {
 
 .quickie-zone-container {
     margin: 30px 10px 60px 10px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 #weeklyPlan {
-    font-family: Italiano;
+    font-family: 'Roboto', sans-serif;
 }
 
 button {
@@ -85,18 +87,25 @@ button {
     width: auto;
 }
 
-/* #quotes {
-    background-color: rgb(38, 225, 219);
+#quotes {
+    background-color: rgb(247, 207, 241);
     text-align: center;
-    height: 150px;
-    display: flex;
+    /* height: 100px; */
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-} 
+    width: 600px;
+    height: auto;
+}
 
 #quotesButton button {
     width: 50px;
-}  */
+}
 
+.quotes-p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-style: italic;
+}
 

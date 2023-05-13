@@ -36,14 +36,6 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     e.preventDefault();
     let submitButton = document.createElement("input")
     submitButton.type = "submit"
-    //deneme
-    // submitButton.setAttribute('id', 'submitButton')
-    // submitButton.addEventListener('click', (e) => {
-    //     document.getElementById('submitButton').style.display = 'block';
-    //     this.style.display = 'none';
-    // })
-    //submitButton.addEventListener('click', () => p.classList.toggle('hide'));
-    //deneme
     const numberOfDays = document.getElementById("number-of-days").value;
     for(let i=0; i < numberOfDays; i++){
         //make d-down boxes === number of days
@@ -71,27 +63,6 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     //submitOneTime(e)
 })
 
-//QESTION I can submit infinitely. It adds more d-down+new submit button for each input submit.
-//Trying to make a fucntion to make user submit #no of days only one time
-// function submitOneTime (e) {
-//     const allowSubmit = true;
-//     e.onsubmit = function () {
-//         if(allowSubmit)
-//             allowSubmit = false;
-//         else
-//             return false;
-//     } 
-// }
-//deneme kodu sonu
-
-//try another option //used var cuz I don't know which scope should I add this fucntion so I used var to access everywhere in global scope 
-// document.observe("DOMContentLoaded", () => {
-//     var btn;
-//     btn = $('submitButton');
-//     btn.observe('click', () => this.disabled = true)
-// });
-
-
 // breakroom help, continue on this code 
 //     if(displayDays[0]){
 //         if(e.target[0] === displayDays[displayDays.length-1])return;
@@ -101,14 +72,12 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
 function handleDisplayDay(e){
     e.preventDefault()
     const practiceContainer = document.querySelector('#practiceContainer')
+    //console.log(e.target.lastChild)
+    e.target.lastChild.disabled = "true"
     if(displayDays[0]){ 
         if(e.target[0] === displayDays[displayDays.length-1])return;
         const dayOneCard = document.createElement("div")
-        //const dayOnePractice = document.createElement('p')
-        //dayOnePractice.textContent = e.target[0].value
         const dayOne = document.createElement('p')
-        //dayOne.textContent = 'Day 1'
-        //const dayNumber = dayOne.textContent
         dayOneCard.textContent = `${dayOne.textContent = "Day 1"}: ${e.target[0].value}`;
         practiceContainer.append(dayOneCard)
     }
@@ -164,6 +133,8 @@ const displayDuration = document.querySelector("#displayDuration");
     let submitButton = document.createElement("input")
     submitButton.type = "submit"
     const practiceDuration = document.getElementById("number-of-days").value;
+    //console.log(e.target)
+    e.target.submitButton.disabled = "true"
     for(let i=0; i < practiceDuration; i++){
         const selectDuration = document.createElement("select");
         const chooseDuration = document.createElement("option")
@@ -188,31 +159,25 @@ const displayDuration = document.querySelector("#displayDuration");
     if(displayDuration[0]){ 
         if(e.target[0] === displayDuration[displayDuration.length-1])return;
         const dayOneCard = document.createElement("div")
-        const dayOne = document.createElement('p')
-        dayOneCard.textContent = `${dayOne.textContent = "Day 1"}: ${e.target[0].value}`;
+        dayOneCard.textContent = `Day 1: ${e.target[0].value}`;
         durationContainer.append(dayOneCard)
     }
     if(displayDuration[1]){ 
         if(e.target[1] === displayDuration[displayDuration.length-1])return;
         const dayTwoCard = document.createElement("div")
-        const dayTwo = document.createElement('p')
-        dayTwo.textContent = `${dayTwo.textContent = "Day 2"}: ${e.target[1].value}`;
+        dayTwoCard.textContent = `Day 1: ${e.target[0].value}`;
         durationContainer.append(dayTwoCard)
     }
     if(displayDuration[2]){ 
         if(e.target[2] === displayDuration[displayDuration.length-1])return;
         const dayThreeCard = document.createElement("div")
-        const dayThree = document.createElement('p')
-        dayThreeCard.textContent = `${dayThree.textContent = "Day 3"}: ${e.target[2].value}`;
+        dayThreeCard.textContent = `Day 1: ${e.target[0].value}`;
         durationContainer.append(dayThreeCard)
     }
  }
 
-
-//QUESTION When I apply css on it, I can't close the modal box. I couldn't put it in the middle of the screen as a second layer. 
-
-//manipulates affirmations box
-// const quotes = document.getElementById("quotes");
-// setTimeout(() => quotes.show(), 3000);
-// document.getElementById("quotesButton").addEventListener("click", (e) => quotes.close())
+//manipulates quotes box
+const quotes = document.getElementById("quotes");
+setTimeout(() => quotes.show(), 1000);
+document.getElementById("quotesButton").addEventListener("click", (e) => quotes.close())
 

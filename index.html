@@ -10,7 +10,7 @@
     <script src="./main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,12 +30,9 @@
         <legend>Create My Weekly Plan</legend>
         <p>Set your goal and leave the rest to us!</p>
         <form id="weeklyPlan" class="weekly-plan">
-            <!-- limiting input to a number between 1-7 -->
             <label for="number-of-days">Type how many days would you like to practice? (1-7)</label>
             <input type="number" min="1" max="7" id="number-of-days" name="number-of-days" placeholder=" 1/7" />
             <input id="submitButton" type="submit" onclick="this.style.visibility = 'hidden'" />
-            <!-- limiting submit click to one time -->
-            <!-- <input type="submit" onclick="this.form.submit();this.disabled = 'true'" value="Save" /> -->
         </form>
         <form id="displayDays"></form>
         <br>
@@ -48,7 +45,7 @@
 
 
     <dialog id="quotes">
-        <p>It's not about being good at something. It's about being good to yourself.</p>
+        <p class="quotes-p">"IT'S NOT ABOUT BEING GOOD AT SOMETHING.<br/> IT'S ABOUT BEING GOOD TO YOURSELF!"</p>
         <button id="quotesButton">X</button>
     </dialog>
     
