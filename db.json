@@ -6,8 +6,7 @@
         "name": "Yoga",
         "image": "images/YOGA-photo-by-dylan-gillis-unsplash.jpg",
         "duration": "5 min",
-        "description": "Yoga is a physical and mental practice that originated in ancient India.",
-        "facts": "Yoga has been shown to reduce stress, improve flexibility, strengthen muscles, and increase overall physical and mental well-being. Regular practice can also help with chronic pain, depression, and anxiety."
+        "description": "Yoga is a physical and mental practice that originated in ancient India. Yoga has been shown to reduce stress, improve flexibility, strengthen muscles, and increase overall physical and mental well-being. Regular practice can also help with chronic pain, depression, and anxiety."
     }, 
     {
         "id": 2,
@@ -15,8 +14,7 @@
         "name": "Meditation",
         "image": "images/meditation-photo-by-shashi-chaturvedula-unsplash.jpg",
         "duration": "5 min",
-        "description": "Meditation is a practice with the goal of achieving a mentally clear and emotionally calm state.",
-        "facts": "Meditation has been shown to reduce stress and anxiety, improve focus and concentration, increase emotional well-being, and promote better sleep."
+        "description": "Meditation is a practice with the goal of achieving a mentally clear and emotionally calm state. Meditation has been shown to reduce stress and anxiety, improve focus and concentration, increase emotional well-being, and promote better sleep."
     },
     {
         "id": 3,
@@ -24,8 +22,7 @@
         "name": "Stretch",
         "image": "images/STRETCH-photo-by-anastasia-hisel-unsplash.jpg",
         "duration": "7 min",
-        "description": "Body stretching should be done daily with the goal of increasing flexibility and range of motion.",
-        "facts": "Stretching can improve flexibility and range of motion, improve posture and balance, increase blood flow and oxygen to the muscles, and reduce the risk of injury during physical activities."
+        "description": "Body stretching should be done daily with the goal of increasing flexibility and range of motion. Stretching can improve flexibility and range of motion, improve posture and balance, increase blood flow and oxygen to the muscles, and reduce the risk of injury during physical activities."
     },
     {
         "id": 4,
@@ -33,8 +30,7 @@
         "name": "Breathe",
         "image": "images/BREATHE-photo-by-valeriia-bugaiova-unsplash.jpg",
         "duration": "4 min",
-        "description": "Breathing exercises are designed to regulate the breath, calm the mind, and reduce stress and tension in the body.",
-        "facts": "Daily breathing exercises nvolve focused and intentional breathing techniques which can help reduce stress and anxiety, improve mental clarity and focus, increase oxygen flow to the brain and body, and promote relaxation and better sleep. Regular practice can also support the functioning of the respiratory system."
+        "description": "Breathing exercises are designed to regulate the breath, calm the mind, and reduce stress and tension in the body. Daily breathing exercises nvolve focused and intentional breathing techniques which can help reduce stress and anxiety, improve mental clarity and focus, increase oxygen flow to the brain and body, and promote relaxation and better sleep. Regular practice can also support the functioning of the respiratory system."
     },
     {
         "id": 5,
@@ -42,8 +38,7 @@
         "title": "Warm-up Quickie",
         "name": "Warm-up",
         "duration": "5 min",
-        "description": "Warm-up exercises are gentle physical activities designed to gradually increase heart rate, blood flow, and body temperature.",
-        "facts": "When used as a morning routine, warm-up exercises can increase energy levels, improve circulation, and support mental focus and productivity throughout the day. Warm-up exercises are great way to start the day to boost productivity as well as preparing your muscles before high intensity physical work." 
+        "description": "Warm-up exercises are gentle physical activities designed to gradually increase heart rate, blood flow, and body temperature. When used as a morning routine, warm-up exercises can increase energy levels, improve circulation, and support mental focus and productivity throughout the day. Warm-up exercises are great way to start the day to boost productivity as well as preparing your muscles before high intensity physical work." 
     },
     {
         "id": 6,
@@ -51,8 +46,7 @@
         "title": "Pilates Quickie",
         "name": "Pilates",
         "duration": "10 min",
-        "description": "Pilates is a form of exercise which concentrates on strengthening the body with an emphasis on core strength.",
-        "facts": "Pilates is a form of exercise that focuses on strengthening the core muscles of your body, including the abdominal muscles, lower back, hips, and buttocks. By practicing Pilates, you can expect to improve your overall muscle tone, enhance muscular control, and stabilize your spine." 
+        "description": "Pilates is a form of exercise which concentrates on strengthening the body with an emphasis on core strength. Pilates is a form of exercise that focuses on strengthening the core muscles of your body, including the abdominal muscles, lower back, hips, and buttocks. By practicing Pilates, you can expect to improve your overall muscle tone, enhance muscular control, and stabilize your spine." 
     }
     ]
 }
