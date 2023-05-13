@@ -165,11 +165,11 @@ const displayDuration = document.querySelector("#displayDuration");
         dayFourCard.textContent = `Day 4 Practice Duration: ${e.target[3].value}`;
         durationContainer.append(dayFourCard)
     }
-    // if(displayDuration[4]){ 
-    //     if(e.target[4] === displayDuration[displayDuration.length-1])return;
-    //     const dayFiveCard = document.createElement("div")
-    //     dayFiveCard.textContent = `Day 5 Practice Duration: ${e.target[4].value}`;
-    //     durationContainer.append(dayFiveCard)
+    if(displayDuration[4]){ 
+        if(e.target[4] === displayDuration[displayDuration.length-1])return;
+        const dayFiveCard = document.createElement("div")
+        dayFiveCard.textContent = `Day 5 Practice Duration: ${e.target[4].value}`;
+        durationContainer.append(dayFiveCard)
     }
     if(displayDuration[5]){ 
         if(e.target[5] === displayDuration[displayDuration.length-1])return;

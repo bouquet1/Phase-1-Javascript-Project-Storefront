@@ -20,6 +20,9 @@ header img {
     height: 120px;
     max-width: auto;
     margin-bottom: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(177, 15, 152);
 }
 
 #introductionText {
