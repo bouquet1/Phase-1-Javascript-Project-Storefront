@@ -42,7 +42,7 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     //     document.getElementById('submitButton').style.display = 'block';
     //     this.style.display = 'none';
     // })
-    submitButton.addEventListener('click', () => p.classList.toggle('hide'));
+    //submitButton.addEventListener('click', () => p.classList.toggle('hide'));
     //deneme
     const numberOfDays = document.getElementById("number-of-days").value;
     for(let i=0; i < numberOfDays; i++){
@@ -156,8 +156,58 @@ function handleDisplayDay(e){
     }
  }
 
- const displayDuration = document.querySelector("#displayDuration");
+
+const displayDuration = document.querySelector("#displayDuration");
  //submit event listener duration input
+ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
+    e.preventDefault();
+    let submitButton = document.createElement("input")
+    submitButton.type = "submit"
+    const practiceDuration = document.getElementById("number-of-days").value;
+    for(let i=0; i < practiceDuration; i++){
+        const selectDuration = document.createElement("select");
+        const chooseDuration = document.createElement("option")
+        chooseDuration.textContent = "Choose Duration"
+        const fiveToTenMinutes = document.createElement("option")
+        fiveToTenMinutes.textContent = "5-10 minutes"
+        const tenToFifteenMinutes = document.createElement("option")
+        tenToFifteenMinutes.textContent = "10-15 minutes"
+        const fifteenToTwentyMinutes = document.createElement("option")
+        fifteenToTwentyMinutes.textContent = "15-20 minutes"
+
+        selectDuration.append(chooseDuration, fiveToTenMinutes, tenToFifteenMinutes, fifteenToTwentyMinutes);
+        displayDuration.append(selectDuration)
+    }
+    displayDuration.append(submitButton)
+    displayDuration.addEventListener('submit', handleDisplayDuration)
+ })
+
+ function handleDisplayDuration(e){
+    e.preventDefault()
+    const durationContainer = document.querySelector('#durationContainer')
+    if(displayDuration[0]){ 
+        if(e.target[0] === displayDuration[displayDuration.length-1])return;
+        const dayOneCard = document.createElement("div")
+        const dayOne = document.createElement('p')
+        dayOneCard.textContent = `${dayOne.textContent = "Day 1"}: ${e.target[0].value}`;
+        durationContainer.append(dayOneCard)
+    }
+    if(displayDuration[1]){ 
+        if(e.target[1] === displayDuration[displayDuration.length-1])return;
+        const dayTwoCard = document.createElement("div")
+        const dayTwo = document.createElement('p')
+        dayTwo.textContent = `${dayTwo.textContent = "Day 2"}: ${e.target[1].value}`;
+        durationContainer.append(dayTwoCard)
+    }
+    if(displayDuration[2]){ 
+        if(e.target[2] === displayDuration[displayDuration.length-1])return;
+        const dayThreeCard = document.createElement("div")
+        const dayThree = document.createElement('p')
+        dayThreeCard.textContent = `${dayThree.textContent = "Day 3"}: ${e.target[2].value}`;
+        durationContainer.append(dayThreeCard)
+    }
+ }
+
 
 //QUESTION When I apply css on it, I can't close the modal box. I couldn't put it in the middle of the screen as a second layer. 
 
