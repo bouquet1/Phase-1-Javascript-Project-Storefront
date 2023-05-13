@@ -66,11 +66,14 @@ h5 {
 }
 
 #footer {
-    background-color: #beeade;
-    height: 50px;
+    background-color: rgb(247, 207, 241);
+    height: 30px;
     width: 100%;
     text-align: center;
-    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
 }
 
 .quickie-zone-container {
@@ -90,8 +93,6 @@ button {
 #quotes {
     background-color: rgb(247, 207, 241);
     text-align: center;
-    /* height: 100px; */
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: center;

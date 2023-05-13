@@ -60,67 +60,53 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     }
     displayDays.append(submitButton)
     displayDays.addEventListener('submit', handleDisplayDay)
-    //submitOneTime(e)
 })
 
-// breakroom help, continue on this code 
-//     if(displayDays[0]){
-//         if(e.target[0] === displayDays[displayDays.length-1])return;
-//         console.log(e.target[0].value)
-//     }
 
 function handleDisplayDay(e){
     e.preventDefault()
     const practiceContainer = document.querySelector('#practiceContainer')
-    //console.log(e.target.lastChild)
     e.target.lastChild.disabled = "true"
     if(displayDays[0]){ 
         if(e.target[0] === displayDays[displayDays.length-1])return;
         const dayOneCard = document.createElement("div")
-        const dayOne = document.createElement('p')
-        dayOneCard.textContent = `${dayOne.textContent = "Day 1"}: ${e.target[0].value}`;
+        dayOneCard.textContent = `Day 1 Practice: ${e.target[0].value}`;
         practiceContainer.append(dayOneCard)
     }
     if(displayDays[1]){
         if(e.target[1] === displayDays[displayDays.length-1])return;
         const dayTwoCard = document.createElement("div")
-        const dayTwo = document.createElement('p')
-        dayTwoCard.textContent = `${dayTwo.textContent = "Day 2"}: ${e.target[1].value}`;
+        dayTwoCard.textContent = `Day 2 Practice: ${e.target[1].value}`;
         practiceContainer.append(dayTwoCard)
     }
     if(displayDays[2]){
         if(e.target[2] === displayDays[displayDays.length-1])return;
         const dayThreeCard = document.createElement("div")
-        const dayThree = document.createElement("p")
-        dayThreeCard.textContent = `${dayThree.textContent = "Day 3"}: ${e.target[2].value}`
+        dayThreeCard.textContent = `Day 3 Practice: ${e.target[2].value}`
         practiceContainer.append(dayThreeCard)
     }
     if(displayDays[3]){
         if(e.target[3] === displayDays[displayDays.length-1])return;
         const dayFourCard = document.createElement("div")
-        const dayFour = document.createElement("p")
-        dayFourCard.textContent = `${dayFour.textContent = "Day 4"}: ${e.target[3].value}`
+        dayFourCard.textContent = `Day 4 Practice: ${e.target[3].value}`
         practiceContainer.append(dayFourCard)
     }
     if(displayDays[4]){
         if(e.target[4] === displayDays[displayDays.length-1])return;
         const dayFiveCard = document.createElement("div")
-        const dayFive = document.createElement("p")
-        dayFiveCard.textContent = `${dayFive.textContent = "Day 5"}: ${e.target[4].value}`
+        dayFiveCard.textContent = `Day 5 Practice: ${e.target[4].value}`
         practiceContainer.append(dayFiveCard)
     }
     if(displayDays[5]){
         if(e.target[5] === displayDays[displayDays.length-1])return;
         const daySixCard = document.createElement("div")
-        const daySix = document.createElement("p")
-        daySixCard.textContent = `${daySix.textContent = "Day 6"}: ${e.target[5].value}`
+        daySixCard.textContent = `Day 6 Practice: ${e.target[5].value}`
         practiceContainer.append(daySixCard)
     }
     if(displayDays[6]){
         if(e.target[6] === displayDays[displayDays.length-1])return;
         const daySevenCard = document.createElement("div")
-        const daySeven = document.createElement("p")
-        daySevenCard.textContent = `${daySeven.textContent = "Day 4"}: ${e.target[6].value}`
+        daySevenCard.textContent = `Day 7 Practice: ${e.target[6].value}`
         practiceContainer.append(daySevenCard)
     }
  }
@@ -133,8 +119,6 @@ const displayDuration = document.querySelector("#displayDuration");
     let submitButton = document.createElement("input")
     submitButton.type = "submit"
     const practiceDuration = document.getElementById("number-of-days").value;
-    //console.log(e.target)
-    e.target.submitButton.disabled = "true"
     for(let i=0; i < practiceDuration; i++){
         const selectDuration = document.createElement("select");
         const chooseDuration = document.createElement("option")
@@ -156,23 +140,48 @@ const displayDuration = document.querySelector("#displayDuration");
  function handleDisplayDuration(e){
     e.preventDefault()
     const durationContainer = document.querySelector('#durationContainer')
+    e.target.lastChild.disabled = "true"
     if(displayDuration[0]){ 
         if(e.target[0] === displayDuration[displayDuration.length-1])return;
         const dayOneCard = document.createElement("div")
-        dayOneCard.textContent = `Day 1: ${e.target[0].value}`;
+        dayOneCard.textContent = `Day 1 Practice Duration: ${e.target[0].value}`;
         durationContainer.append(dayOneCard)
     }
     if(displayDuration[1]){ 
         if(e.target[1] === displayDuration[displayDuration.length-1])return;
         const dayTwoCard = document.createElement("div")
-        dayTwoCard.textContent = `Day 1: ${e.target[0].value}`;
+        dayTwoCard.textContent = `Day 2 Practice Duration: ${e.target[1].value}`;
         durationContainer.append(dayTwoCard)
     }
     if(displayDuration[2]){ 
         if(e.target[2] === displayDuration[displayDuration.length-1])return;
         const dayThreeCard = document.createElement("div")
-        dayThreeCard.textContent = `Day 1: ${e.target[0].value}`;
+        dayThreeCard.textContent = `Day 3 Practice Duration: ${e.target[2].value}`;
         durationContainer.append(dayThreeCard)
+    }
+    if(displayDuration[3]){ 
+        if(e.target[3] === displayDuration[displayDuration.length-1])return;
+        const dayFourCard = document.createElement("div")
+        dayFourCard.textContent = `Day 4 Practice Duration: ${e.target[3].value}`;
+        durationContainer.append(dayFourCard)
+    }
+    if(displayDuration[4]){ 
+        if(e.target[4] === displayDuration[displayDuration.length-1])return;
+        const dayFiveCard = document.createElement("div")
+        dayFiveCard.textContent = `Day 5 Practice Duration: ${e.target[4].value}`;
+        durationContainer.append(dayFiveCard)
+    }
+    if(displayDuration[5]){ 
+        if(e.target[5] === displayDuration[displayDuration.length-1])return;
+        const daySixCard = document.createElement("div")
+        daySixCard.textContent = `Day 6 Practice Duration: ${e.target[5].value}`;
+        durationContainer.append(daySixCard)
+    }
+    if(displayDuration[6]){ 
+        if(e.target[6] === displayDuration[displayDuration.length-1])return;
+        const daySevenCard = document.createElement("div")
+        daySevenCard.textContent = `Day 7 Practice Duration: ${e.target[6].value}`;
+        durationContainer.append(daySevenCard)
     }
  }
 
