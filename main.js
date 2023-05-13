@@ -62,23 +62,35 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     displayDays.addEventListener('submit', handleDisplayDay)
 })
 
-// function handleDisplayDay(e){
-//     e.preventDefault()
-//     const practiceContainer = document.querySelector('#practiceContainer')
-//     if(displayDays[0]){ 
-//         if(e.target[0] === displayDays[displayDays.length-1])return;
-//         const dayOneCard = document.createElement("div")
-//         const dayOnePractice = document.createElement('p')
-//         const dayOne = document.createElement('h1')
-//         dayOne.textContent = 'Day 1:'
-//         dayOnePractice.textContent = e.target[0].value
-//         dayOneCard.append(dayOne, dayOnePractice)
-//         practiceContainer.append(dayOneCard)
-//     }
-//     if(displayDays[1]){
-//         if(e.target[1] === displayDays[displayDays.length-1])return;
-//         console.log(e.target[1].value)
-//     }
+function handleDisplayDay(e){
+    e.preventDefault()
+    const practiceContainer = document.querySelector('#practiceContainer')
+    if(displayDays[0]){ 
+        if(e.target[0] === displayDays[displayDays.length-1])return;
+        const dayOneCard = document.createElement("div")
+        const dayOnePractice = document.createElement('p')
+        dayOnePractice.textContent = e.target[0].value
+        const chosenPractice = dayOnePractice.textContent
+        const dayOne = document.createElement('p')
+        dayOne.textContent = 'Day 1'
+        const dayNumber = dayOne.textContent
+        dayOneCard.textContent = `${dayNumber}: ${chosenPractice}`;
+        practiceContainer.append(dayOneCard)
+    }
+    if(displayDays[1]){
+        if(e.target[1] === displayDays[displayDays.length-1])return;
+        const dayTwoCard = document.createElement("div")
+        const dayTwoPractice = document.createElement('p')
+        dayTwoPractice.textContent = e.target[1].value
+        const chosenPractice = dayTwoPractice.textContent
+        const dayTwo = document.createElement('p')
+        dayTwo.textContent = 'Day 2'
+        const dayNumber = dayTwo.textContent
+        dayTwoCard.textContent = `${dayNumber}: ${chosenPractice}`;
+        practiceContainer.append(dayTwoCard)
+    }
+
+
 //     if(displayDays[2]){
 //         if(e.target[2] === displayDays[displayDays.length-1])return;
 //         console.log(e.target[2].value)
@@ -99,39 +111,38 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
 //         if(e.target[6] === displayDays[displayDays.length-1])return;
 //         console.log(e.target[6].value)
 //     }
-// }
+ }
 
-//QUESTION
-//I couldn't find a way to extract the value = user's choice from D-down menu such as 'Yoga'
+//QUESTION when I choose more than 1 day it gets weird because value of numberOfDays changes from 1 to f.e.2 or 3 and Day 1 becomes 2 or 3/
+
 // function handleDisplayDay(e) {
 //     e.preventDefault();
 //     const practiceContainer = document.querySelector('#practiceContainer');
 //     const numberOfDays = document.getElementById("number-of-days").value;
 //     const selectActivity = document.createElement("select");
-//     const workPlan = {
-//         dayChoice: numberOfDays,
-//         practiceChoice: selectActivity.option, 
-//         //targetArea,
-//        //duration,
-//     }
 //     if(displayDays[0]) { 
-//         if(e.target [0] === displayDays[displayDays.length-1])return;
+//         if(e.target[0] === displayDays[displayDays.length-1])return;
+//         const workPlan = {
+//             dayChoice: numberOfDays,
+//             practiceChoice: e.target[0].value, 
+//         }
 //         const dayOneCard = document.createElement("div");
-//         dayOneCard.textContent = `Day ${workPlan.dayChoice}: r${workPlan.practiceChoice}`
+//         dayOneCard.textContent = `Day ${workPlan.dayChoice}: ${workPlan.practiceChoice}`
 //         practiceContainer.append(dayOneCard)
-// }
+//     }
+//     if(displayDays[1]){
+//         if(e.target[1] === displayDays[displayDays.length-1])return;
+//         const workPlan = {
+//             dayChoice: numberOfDays,
+//             practiceChoice: e.target[1].value, 
+//         }
+//         const dayTwoCard = document.createElement("div");
+//         dayTwoCard.textContent = `Day ${workPlan.dayChoice}: ${workPlan.practiceChoice}`
+//         practiceContainer.append(dayTwoCard)
+//     }
 // }
 
-function handleDisplayDay(e) {
-        e.preventDefault();
-        const practiceContainer = document.querySelector('#practiceContainer');
-        if(displayDays[0]) { 
-            if(e.target [0] === displayDays[displayDays.length-1])return;
-            const dayOneCard = document.createElement("div");
-            dayOneCard.textContent = `Day ${numberOfDays}: r${workPlan.practiceChoice}`
-            practiceContainer.append(dayOneCard)
-    }
-    }
+
 
 
 
@@ -141,3 +152,4 @@ function handleDisplayDay(e) {
 // const quotes = document.getElementById("quotes");
 // setTimeout(() => quotes.show(), 3000);
 // document.getElementById("quotesButton").addEventListener("click", (e) => quotes.close())
+
