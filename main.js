@@ -62,64 +62,72 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     displayDays.addEventListener('submit', handleDisplayDay)
 })
 
+//QUESTION submit button continues to submit even after # of days is chosen. It shouldn't submit more than 7 days.
 function handleDisplayDay(e){
     e.preventDefault()
     const practiceContainer = document.querySelector('#practiceContainer')
     if(displayDays[0]){ 
         if(e.target[0] === displayDays[displayDays.length-1])return;
         const dayOneCard = document.createElement("div")
-        const dayOnePractice = document.createElement('p')
-        dayOnePractice.textContent = e.target[0].value
-        const chosenPractice = dayOnePractice.textContent
+        //const dayOnePractice = document.createElement('p')
+        //dayOnePractice.textContent = e.target[0].value
         const dayOne = document.createElement('p')
-        dayOne.textContent = 'Day 1'
-        const dayNumber = dayOne.textContent
-        dayOneCard.textContent = `${dayNumber}: ${chosenPractice}`;
+        //dayOne.textContent = 'Day 1'
+        //const dayNumber = dayOne.textContent
+        dayOneCard.textContent = `${dayOne.textContent = "Day 1"}: ${e.target[0].value}`;
         practiceContainer.append(dayOneCard)
     }
     if(displayDays[1]){
         if(e.target[1] === displayDays[displayDays.length-1])return;
         const dayTwoCard = document.createElement("div")
-        const dayTwoPractice = document.createElement('p')
-        dayTwoPractice.textContent = e.target[1].value
-        const chosenPractice = dayTwoPractice.textContent
         const dayTwo = document.createElement('p')
-        dayTwo.textContent = 'Day 2'
-        const dayNumber = dayTwo.textContent
-        dayTwoCard.textContent = `${dayNumber}: ${chosenPractice}`;
+        dayTwoCard.textContent = `${dayTwo.textContent = "Day 2"}: ${e.target[1].value}`;
         practiceContainer.append(dayTwoCard)
     }
     if(displayDays[2]){
         if(e.target[2] === displayDays[displayDays.length-1])return;
         const dayThreeCard = document.createElement("div")
-        //const dayThreePractice = document.createElement("p")
-        //dayThreePractice.textContent = e.target[2].value
-        //const chosenPractice = dayThreePractice.textContent
         const dayThree = document.createElement("p")
-        //dayThree.textContent = "Day 3"
-        //const dayNumber = dayThree.textContent
         dayThreeCard.textContent = `${dayThree.textContent = "Day 3"}: ${e.target[2].value}`
         practiceContainer.append(dayThreeCard)
+    }
+    if(displayDays[3]){
+        if(e.target[3] === displayDays[displayDays.length-1])return;
+        const dayFourCard = document.createElement("div")
+        const dayFour = document.createElement("p")
+        dayFourCard.textContent = `${dayFour.textContent = "Day 4"}: ${e.target[3].value}`
+        practiceContainer.append(dayFourCard)
+    }
+    if(displayDays[4]){
+        if(e.target[4] === displayDays[displayDays.length-1])return;
+        const dayFiveCard = document.createElement("div")
+        const dayFive = document.createElement("p")
+        dayFiveCard.textContent = `${dayFive.textContent = "Day 5"}: ${e.target[4].value}`
+        practiceContainer.append(dayFiveCard)
+    }
+    if(displayDays[5]){
+        if(e.target[5] === displayDays[displayDays.length-1])return;
+        const daySixCard = document.createElement("div")
+        const daySix = document.createElement("p")
+        daySixCard.textContent = `${daySix.textContent = "Day 6"}: ${e.target[5].value}`
+        practiceContainer.append(daySixCard)
+    }
+    if(displayDays[6]){
+        if(e.target[6] === displayDays[displayDays.length-1])return;
+        const daySevenCard = document.createElement("div")
+        const daySeven = document.createElement("p")
+        daySevenCard.textContent = `${daySeven.textContent = "Day 4"}: ${e.target[6].value}`
+        practiceContainer.append(daySevenCard)
     }
 
 
 
-//     if(displayDays[3]){
-//         if(e.target[3] === displayDays[displayDays.length-1])return;
-//         console.log(e.target[3].value)
+// breakroom help, continue on this code 
+//     if(displayDays[0]){
+//         if(e.target[0] === displayDays[displayDays.length-1])return;
+//         console.log(e.target[0].value)
 //     }
-//     if(displayDays[4]){
-//         if(e.target[4] === displayDays[displayDays.length-1])return;
-//         console.log(e.target[4].value)
-//     }
-//     if(displayDays[5]){
-//         if(e.target[5] === displayDays[displayDays.length-1])return;
-//         console.log(e.target[5].value)
-//     }
-//     if(displayDays[6]){
-//         if(e.target[6] === displayDays[displayDays.length-1])return;
-//         console.log(e.target[6].value)
-//     }
+
  }
 
 //QUESTION when I choose more than 1 day it gets weird because value of numberOfDays changes from 1 to f.e.2 or 3 and Day 1 becomes 2 or 3/
