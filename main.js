@@ -36,10 +36,15 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     e.preventDefault();
     let submitButton = document.createElement("input")
     submitButton.type = "submit"
+    //deneme
+    // submitButton.setAttribute('id', 'submitButton')
+    // submitButton.addEventListener('click', (e) => {
+    //     document.getElementById('submitButton').style.display = 'block';
+    //     this.style.display = 'none';
+    // })
+    submitButton.addEventListener('click', () => p.classList.toggle('hide'));
+    //deneme
     const numberOfDays = document.getElementById("number-of-days").value;
-    //deneme kodu basi
-    
-    //deneme kodu sonu
     for(let i=0; i < numberOfDays; i++){
         //make d-down boxes === number of days
         const selectActivity = document.createElement("select");
@@ -63,9 +68,29 @@ document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     }
     displayDays.append(submitButton)
     displayDays.addEventListener('submit', handleDisplayDay)
+    //submitOneTime(e)
 })
 
-//QUESTION submit button continues to submit even after # of days is chosen. It shouldn't submit more than 7 days.
+//QESTION I can submit infinitely. It adds more d-down+new submit button for each input submit.
+//Trying to make a fucntion to make user submit #no of days only one time
+// function submitOneTime (e) {
+//     const allowSubmit = true;
+//     e.onsubmit = function () {
+//         if(allowSubmit)
+//             allowSubmit = false;
+//         else
+//             return false;
+//     } 
+// }
+//deneme kodu sonu
+
+//try another option //used var cuz I don't know which scope should I add this fucntion so I used var to access everywhere in global scope 
+// document.observe("DOMContentLoaded", () => {
+//     var btn;
+//     btn = $('submitButton');
+//     btn.observe('click', () => this.disabled = true)
+// });
+
 
 // breakroom help, continue on this code 
 //     if(displayDays[0]){
@@ -132,10 +157,9 @@ function handleDisplayDay(e){
  }
 
 
-
-//manipulates affirmations box
 //QUESTION When I apply css on it, I can't close the modal box. I couldn't put it in the middle of the screen as a second layer. 
 
+//manipulates affirmations box
 // const quotes = document.getElementById("quotes");
 // setTimeout(() => quotes.show(), 3000);
 // document.getElementById("quotesButton").addEventListener("click", (e) => quotes.close())
