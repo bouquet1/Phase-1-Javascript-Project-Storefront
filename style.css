@@ -99,8 +99,9 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 800px;
     height: auto;
+    padding: 10px 10 px;
 }
 
 #quotesButton button {

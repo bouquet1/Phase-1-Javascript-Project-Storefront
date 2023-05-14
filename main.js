@@ -1,5 +1,3 @@
-
-document.addEventListener('DOMContentLoaded', () => {
     function createContainerElements(practice) {
         //create a container div for practices, create title, h2, img, duration, description, button for practices, and append them to DOM.
         let dailyQuickies = document.createElement("div");
@@ -18,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.add('quickie-button');
         button.textContent = `What is ${practice.name}`;
         button.addEventListener('click', () => p.classList.toggle('hide'));
-        // button2.addEventListener('click', () => p.classList.toggle('hide'));
         dailyQuickies.append(h3, img, h5, p, button,);
         document.getElementById("practicesList").appendChild(dailyQuickies);
     }
@@ -29,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
             practices.forEach(practice => createContainerElements(practice));
         })
 
-})
+
 const displayDays = document.querySelector("#displayDays");
-//submit event listener weekly goal input
+//submit event listener weekly goal practice input
 document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     e.preventDefault();
     let submitButton = document.createElement("input")
@@ -185,7 +182,7 @@ const displayDuration = document.querySelector("#displayDuration");
     }
  }
 
-//manipulates quotes box
+//Pop-up quote box
 const quotes = document.getElementById("quotes");
 setTimeout(() => quotes.show(), 1000);
 document.getElementById("quotesButton").addEventListener("click", (e) => quotes.close())
