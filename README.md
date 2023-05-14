@@ -3,12 +3,11 @@
 Welcome to Body & Mind Quickie, a wellness-focused webpage designed to help you practice body-mind connection. Our site offers a variety of practices, including **Yoga, Meditation, Pilates, Stretching, Breathing Exercises, and Warm-up Exercises**. With options for different durations, you can find the perfect practice to fit your schedule and needs.
 
 ## Features
-
 ### Create My Weekly Plan
 Our "Create My Weekly Plan" feature allows you to create a custom plan based on your preferences. Choose how many days you want to practice, which practices you want to do, and how long you want each practice to last. Depending on your choices, you will receive various options for each day you choose. You can create a different plan every week to keep things fresh and exciting. 
 
 ### Quickie Zone
-For those who have a busy schedule and still want to spend some "me time," we offer the Quickie Zone. With practices between **3-7 minutes**, you can take a quick break to rejuvenate and refocus. The videos in the Quickie Zone change daily, so there's always something new to explore.
+For those who have a busy schedule and still want to spend some "me time", we offer the Quickie Zone. With practices between **3-7 minutes**, you can take a quick break to rejuvenate and refocus. The videos in the Quickie Zone change daily, so there's always something new to explore.
 
 ### Zen Zone
 For users who want to invest more time in themselves, we have the Zen Zone. These practices are **20 minutes or longer** and offer a deeper level of relaxation and mindfulness. With the Zen Zone, you can spoil yourself and take your practice to the next level.

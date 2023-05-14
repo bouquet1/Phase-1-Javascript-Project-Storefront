@@ -31,7 +31,9 @@ const displayDays = document.querySelector("#displayDays");
 //submit event listener weekly goal practice input
 document.querySelector("#weeklyPlan").addEventListener("submit", (e) => {
     e.preventDefault();
-    let submitButton = document.createElement("input")
+    const firstSubmitButton = document.getElementById('firstSubmitButton')
+    firstSubmitButton.disabled = "true"
+    const submitButton = document.createElement("input")
     submitButton.type = "submit"
     const numberOfDays = document.getElementById("number-of-days").value;
     for(let i=0; i < numberOfDays; i++){
