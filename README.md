@@ -1,6 +1,6 @@
 # Welcome-To-Body-Mind-Quickie!
 ## Body & Mind Quickie
-Welcome to Body & Mind Quickie, a wellness-focused webpage designed to help you practice body-mind connection. Our site offers a variety of practices, including **Yoga, Meditation, Pilates, Stretching, Breathing Exercises, and Warm-up Exercises**. With options for different durations, you can find the perfect practice to fit your schedule and needs.
+Welcome to Body & Mind Quickie, a wellness-focused webpage designed to help you practice body-mind connection. Our site offers a variety of short practices, that are less than 20 minutes, including **Yoga, Meditation, Pilates, Stretching, Breathing Exercises, and Warm-up Exercises**. With options for different durations, you can find the perfect practice to fit your schedule and needs.
 
 ## Features
 ### Create My Weekly Plan
