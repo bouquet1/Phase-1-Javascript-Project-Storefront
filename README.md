@@ -22,4 +22,4 @@ All images used in our webpage are royalty-free images sourced from Unsplash, an
 
 Quickie Zone Images: Credits to Valeriia Bugaiova, Shashi Chaturvedula, Alex Shaw, Anastasia Hisel, Bruce Mars, and Dylan Gillis from unsplash.com for providing the royalty-free images used in the Body & Mind Quickie website.
 
-I made a quick tutorial. You can watch it through this link. https://www.youtube.com/watch?v=Z0kQ4JoOlCQ
+I made a quick tutorial. You can watch it through this link. https://youtu.be/wmWN-jfqFWE
