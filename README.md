@@ -6,6 +6,7 @@ Welcome to Body & Mind Quickie, a wellness-focused webpage designed to help you 
 Start typing `npm install` in terminal at your VsCode. This is necessary to be sure that all the dependencies are installed.
 Then, type `json-server --watch db.json` to star the json server.
 You should see the links in the terminal of your local host: 3000 port. `http://localhost:3000`. Click it to open this project on your web browser.
+P.s: Fetch Request is set up for local host: 3000 port.
 
 
 ## Features
