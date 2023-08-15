@@ -2,6 +2,12 @@
 ## Body & Mind Quickie
 Welcome to Body & Mind Quickie, a wellness-focused webpage designed to help you practice body-mind connection. Our site offers a variety of short practices, that are less than 20 minutes, including **Yoga, Meditation, Pilates, Stretching, Breathing Exercises, and Warm-up Exercises**. With options for different durations, you can find the perfect practice to fit your schedule and needs.
 
+### Setup
+Start typing `npm install` in terminal at your VsCode. This is necessary to be sure that all the dependencies are installed.
+Then, type `json-server --watch db.json` to star the json server.
+You should see the links in the terminal of your local host: 3000 port. `http://localhost:3000`. Click it to open this project on your web browser.
+
+
 ## Features
 ### Create My Weekly Plan
 Our "Create My Weekly Plan" feature allows you to create a custom plan based on your preferences. Choose how many days you want to practice, which practices you want to do, and how long you want each practice to last. Depending on your choices, you will receive various options for each day you choose. You can create a different plan every week to keep things fresh and exciting. 
